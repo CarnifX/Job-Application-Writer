@@ -1,0 +1,28 @@
+[Navn]
+[Adresse]
+[Telefonnummer]
+[E-post]
+
+[Helthjem]
+[Adresse]
+[Postnummer og sted]
+
+[Dato]
+
+Hei,
+
+Jeg søker herved på stillingen som Data- og innsiktsansvarlig i Helthjem, som nylig ble annonsert. Med min erfaring og kompetanse innen dataanalyse, strategisk innsikt og forretningsutvikling, tror jeg at jeg kan bidra positivt til deres selskap i sterk vekst.
+
+Gjennom min utdanning innen data og teknologi, kombinert med min erfaring som analytiker og data engineer, har jeg opparbeidet meg en solid forståelse for å skape verdi gjennom datadrevne beslutninger. Jeg har jobbet med å forvalte og videreutvikle datavarehusløsninger tidligere, samt bistått ulike forretningsområder med innsikt og analyser for å sikre potensialet i data blir realisert.
+
+Jeg ser spesielt frem til å ta eierskapet til Helthjems dataplattform og videreutvikle den i tråd med forretningsmessige behov. Å arbeide tett med CTO og andre fagpersoner for å automatisere datafangst, tilgjengeliggjøre relevant innsikt og skape selvbetjente forretningsområder på analyser, er oppgaver som motiverer meg.
+
+Det som tiltrekker meg med Helthjem er den dynamiske arbeidskulturen, fokus på personlig utvikling og muligheten til å være en del av et strategisk viktig satsningsområde. Jeg identifiserer meg godt med deres kjerneverdier og ser frem til å bidra til et godt arbeidsmiljø med mine sterke samarbeidsevner og entreprenørskapsånd.
+
+Jeg er trygg på min rolle- og organisasjonsforståelse, og jeg trives i hektiske perioder med prosjektarbeid. Mine gode formidlingsevner og evne til å forklare komplekse datasett til ulike målgrupper, gjør meg til en verdifull ressurs for å styrke beslutningsgrunnlaget i Helthjem.
+
+Jeg ser frem til muligheten til å bidra til Helthjems suksess gjennom datadrevet forretningsutvikling, og jeg er spent på å diskutere nærmere hvordan mine ferdigheter og erfaring kan være til nytte for deres team.
+
+Med vennlig hilsen,
+
+[Navn]
