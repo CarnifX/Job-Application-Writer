@@ -5,11 +5,19 @@ import html2text
 from openai import OpenAI
 import PyPDF2
 
+#Funksjonen henter ut text fra PDF-filen, som i dette tilfellet inneholder en CV.
+def text_from_pdf(pdf_file):
+    with open(pdf_file, "rb") as f:
+        pdf = PyPDF2.PdfReader(f)
+        text = ""
+        for page in pdf.pages:
+            text = text + page.extract_text() + " "
+        return text
 
-#Funksjonen under web scraper tekst fra jobbannonse hentet fra
+#Funksjonen web scraper tekst fra jobbannonse hentet fra
 #"import-decoration' i html koden til en finn.no link.
 #Det er her selve jobbeksrivelsen ligger
-def getTextFromWebLink(web_address):
+def get_text_from_web_link(web_address):
 
     page_to_scrape = requests.get(web_address)
     soup = BeautifulSoup(page_to_scrape.text, "html.parser")
@@ -17,15 +25,15 @@ def getTextFromWebLink(web_address):
 
 #Enkel funksjon som åpner en tekstfil lagret i repertoaret,
 #skriver inn stringen som kommer in som argument, og lukker filen
-def writeToTxtFile(text):
+def write_to_txt_file(text):
     cover_letter_file = open("cover_letter.txt", "w")
     cover_letter_file.write(text)
     cover_letter_file.close()
 
 
 #Oppretter to strings: en for CV(curriculum_vitae), og en for annonseteksten(text_content):
-curriculum_vitae = str(PyPDF2.PdfReader("ITCV-Odd-Jørgen-Frydendahl.pdf"))
-raw_html_code = getTextFromWebLink("https://www.finn.no/job/fulltime/ad.html?finnkode=376156800")
+curriculum_vitae = text_from_pdf("ITCV-Odd-Jørgen-Frydendahl.pdf")
+raw_html_code = get_text_from_web_link("https://www.finn.no/job/fulltime/ad.html?finnkode=375482229")
 text_content = html2text.html2text(raw_html_code)
 
 #Henter ut API-nøkkel for chatGPT, lagret i en environment variable fil:
@@ -45,7 +53,7 @@ completion = client.chat.completions.create(
 
 #Omgjør reslutatet fra ChatGPT til string, og lagrer teksten i en tekstfil.
 final_text = str(completion.choices[0].message.content)
-writeToTxtFile(final_text)
+write_to_txt_file(final_text)
 
 
 
