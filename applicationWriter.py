@@ -4,7 +4,8 @@ from openai import OpenAI
 from utility_functions import*
 
 #Oppretter tre strings: en for CV(curriculum_vitae) fra pdf, en for CV(curriculum_vitae) fra docx,
-#og en for annonseteksten(text_content).
+#og en for annonseteksten(text_content). Har planer om å implementere drag 'n drop av filer senere,
+#hvor koden gjennkjenner filtypen og bruker den funksjonen som passer.
 curriculum_vitae_pdf = text_from_pdf("ITCV-Odd-Jørgen-Frydendahl.pdf")
 curriculum_vitae_docx = text_from_docx("ITCV-Odd-Jørgen-Frydendahl.docx")
 raw_html_code = get_text_from_web_link("https://www.finn.no/job/fulltime/ad.html?finnkode=375482229")
