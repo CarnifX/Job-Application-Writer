@@ -3,7 +3,7 @@ import docx2txt
 import requests
 from bs4 import BeautifulSoup
 
-#Funksjonen henter ut text fra en PDF-fil, som i dette tilfellet inneholder en CV.
+#Funksjonen henter ut tekst fra en PDF-fil, som i dette tilfellet inneholder en CV.
 def text_from_pdf(pdf_file):
     with open(pdf_file, "rb") as f:
         pdf = PyPDF2.PdfReader(f)
